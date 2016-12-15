@@ -44,7 +44,26 @@ Final Project</h1>
 </nav>
 <section>
 <h2> Final Project </h2>
-<img src="IMG_1463.JPG" alt="box">
+	<p>For the final project I decided to do a binary clock controlled by an Arduino with a cardboard box encasing it. The four processes entailed in the project are: CAD design, Laser cutting, UV printing and Arduino programming.</p>
+	<p>I first stumbled upon this project when I was browsing through the instructables page, and there was a <a href="http://www.instructables.com/id/My-Arduino-Binary-Clock/">project</a> about an LED binary clock. After establishing that this is a very, very cool project, I researched on the Internet and then used part of the schematics from <a href="http://www.danielandrade.net/2008/07/15/binary-clock-with-arduino/">this guy</a>.</p>
+	<p>The most </p>
+	<p>My first attempt was to print out a circuit board using the LPKF milling machine to serve as an Arduino shield and solder the parts onto the circuit board. I used EAGLE to design the schematics and arrange it on the board.</p>
+<img src="Schematic_opt.jpg" alt="Schematics Design">
+	<br>
+<img src="Board_opt.jpg" alt="Board Design">	
+	<p>Here's a video of the machine cutting:<a href="https://youtu.be/FekfHHp6UAk">Electronic Board Cutting</a>.</p>
+	<p>Unfortunately, due to my bad soldering skills with small dimensions, I failed on two attempts to solder everything together. Following is the second failed product.</p>
+	<img src="IMG_1473.JPG" alt="Failed Soldering">
+	<br>
+	<img src="IMG_1474.JPG" alt="Failed Soldering02">
+	<p>The file is <a href="SHIELD.brd" target="_blank">Shield Design File</a>.</p>
+	<p>Thus, I changed directions and then did less demanding project---building it on a breadboard and encasing the entire thing with a box.<p>
+	<p>The design of the box is <a href="caseplans (3).svg" target="_blank">Box Design File</a>.</p>
+	<img src="Capture.JPG" alt="Design">
+	<br>
+	<img src="IMG_1463.JPG" alt="box">
+	<p>Then I assembled all the parts onto the breadboard and downloaded the program (<a href="Binary_Clock01.ino" target="_blank">Binary Clock File</a>). I verified and uploaded to the arduino, but it did not work! After some musing and investigation, I found out the problem was the code related to the button---the author was using a different type of button than the ones inherent to our arduino sets. After running the serial monitor and testing the values and choosing 8 as the valve value, I tested it again. However, it did not work as I wanted either because the reading from the analog input often has values over 8 multiple times for the same press and values under 8 for others.</p>
+	<p>In the end, I decided to put in the actual time as part of the 
 <img src="IMG_1465.JPG" alt="Arduino">
 <img src="IMG_1464.JPG" alt="Arduino in box">
 <img src="IMG_1466.JPG" alt="Arduino with lines bound in box">
@@ -53,15 +72,15 @@ Final Project</h1>
 <img src="IMG_1470.JPG" alt="15:45">
 <img src="IMG_1471.JPG" alt="Not Lighted">
 <img src="Clock_opt.jpg" alt="Cover Design">
-<img src="Board.JPG" alt="Board Design">
-<img src="Schematic.JPG" alt="Schematics Design">
-<img src="IMG_1473.JPG" alt="Failed Soldering">
-<a href="SHIELD.brd" target="_blank">Shield Design File</a>
+
+
+
+
 <a href="Clock1.ai" target="_blank">Clock Design File</a>
 <a href="Binary_Clock01.ino" target="_blank">Binary Clock File</a>
-<a href="caseplans (2).svg" target="_blank">Box Design File</a>
+
 <a href="https://youtu.be/MeZ_i-sPfJo">Binary Clock</a>
-<a href="https://youtu.be/FekfHHp6UAk">Electronic Board Cutting</a>
+
 </section>
 </body>
 </html>
