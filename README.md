@@ -1,2 +1,2 @@
 # taor
-WRA digital Fabrication and Engineering Cclass
+WRA digital Fabrication and Engineering Class
